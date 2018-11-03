@@ -1,0 +1,18 @@
+<html>
+<head>
+    <title>{{title}}</title>
+</head>
+<body>
+    <h3>{{title}}</h3>
+    <div>{{subtitle}}</div>
+    <div>
+        <a href="{{ url_for("missions") }}">missions</a>   
+    </div>
+    <ol>
+        {% for mission in missions %}
+        <li>{{ mission }}</li>
+        {% endfor %}
+    </ol>    
+</body>
+</html>
+
