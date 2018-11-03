@@ -14,7 +14,7 @@ def missions():
 
 @app.route('/')
 def home():    
-    return render_template('home.html', title='Welcome to Pet Rescue')
+    return render_template('home.html', title='Welcome to the hand')
 
 if __name__ == '__main__':
     app.run(debug=True)
